@@ -5,7 +5,7 @@ import * as Speech from 'expo-speech';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const _backendEndpoint= 'http://nodred-cumadi.mybluemix.net/chat';
+const _backendEndpoint= <YOUR_URL_INTEGRATION_WATSON_ASSISTANT>;
 
 
 import logo from '../assets/Logo-redondo-cumadi.png';
