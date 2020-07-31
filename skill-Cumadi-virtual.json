@@ -1,0 +1,690 @@
+{
+  "intents": [
+    {
+      "intent": "ouvir",
+      "examples": [
+        {
+          "text": "Eu quero ouvir uma música"
+        },
+        {
+          "text": "Quero escutar um podcast"
+        },
+        {
+          "text": "Coloca uma música para eu ouvir"
+        },
+        {
+          "text": "Preciso ouvir um sertanejo"
+        },
+        {
+          "text": "Gostaria de ouvir um podcast"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "cancaonova",
+      "examples": [
+        {
+          "text": "Por favor me ensina a ver cancao nova"
+        },
+        {
+          "text": "Preciso assistir cancao nova"
+        },
+        {
+          "text": "Como eu entro no canal da cancao nova"
+        },
+        {
+          "text": "Qual o numero da cancao nova"
+        },
+        {
+          "text": "Quero assistir cancao nova"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "globo",
+      "examples": [
+        {
+          "text": "Onde eu assisto a Globo?"
+        },
+        {
+          "text": "Como eu encontro o canal globo?"
+        },
+        {
+          "text": "Quero assistir a globo onde encontro?"
+        },
+        {
+          "text": "Por favor me fale como assistir a globo"
+        },
+        {
+          "text": "Poderia me ensinar a assistir a globo"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "goodvibes",
+      "examples": [
+        {
+          "text": "tudo bem"
+        },
+        {
+          "text": "tudo joia"
+        },
+        {
+          "text": "estou ótima"
+        },
+        {
+          "text": "estou bem"
+        },
+        {
+          "text": "tudo otimo"
+        },
+        {
+          "text": "eu estou bem"
+        },
+        {
+          "text": "estou me sentindo radiante"
+        },
+        {
+          "text": "estou muito feliz"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ligacaowpp",
+      "examples": [
+        {
+          "text": "Quero ligar para minha filha pelo whats app"
+        },
+        {
+          "text": "Como faço uma ligação pelo whats app"
+        },
+        {
+          "text": "Preciso fazer uma ligação pelo whats app"
+        },
+        {
+          "text": "Por favor como ligo para minha neta pelo whats app"
+        },
+        {
+          "text": "Me ensina a fazer uma ligação pelo WhatsApp"
+        },
+        {
+          "text": "Quero ligar para minha neta no wpp"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Oi"
+        },
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Boa tarde"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "netflix",
+      "examples": [
+        {
+          "text": "O que é essa tal de netflix"
+        },
+        {
+          "text": "O que é netflix"
+        },
+        {
+          "text": "Me mostra o que é netflix"
+        },
+        {
+          "text": "O que é isso de netflix"
+        },
+        {
+          "text": "Como encontro a netflix?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "assistir",
+      "examples": [
+        {
+          "text": "Por favor quero assistir um vídeo"
+        },
+        {
+          "text": "Me mostra algum jogo de futebol"
+        },
+        {
+          "text": "Gostaria de ver uma série"
+        },
+        {
+          "text": "Eu quero assistir uma novela"
+        },
+        {
+          "text": "Eu gosto de assistir filmes"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "assistir",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "futebol",
+          "synonyms": [
+            "fut"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "novelas",
+          "synonyms": [
+            "novela"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "séries",
+          "synonyms": [
+            "séries"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vídeos",
+          "synonyms": [
+            "video",
+            "vídeo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "filmes",
+          "synonyms": [
+            "filme"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tiposeriefilme",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "animação",
+          "synonyms": [
+            "desenho",
+            "desenho animado",
+            "animacao"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "comédia",
+          "synonyms": [
+            "comedia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ação",
+          "synonyms": [
+            "acao"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "comédia romântica",
+          "synonyms": [
+            "comedia romantica",
+            "comédia romantica",
+            "comedia romântica"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ouvir",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "funk",
+          "synonyms": [
+            "funkao",
+            "funk pesadao"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "rock",
+          "synonyms": [
+            "rock paulera",
+            "rock pesado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "modão",
+          "synonyms": [
+            "modao",
+            "moda de viola",
+            "sertanejo raiz"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pagode",
+          "synonyms": [
+            "pagodinho"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "jazz",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "samba",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sertanejo",
+          "synonyms": [
+            "sertanejo universitário"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "bossa nova",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Que tipo de filme?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1595805563837",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1595805563859",
+      "previous_sibling": "handler_10_1595805563859"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1595805563837",
+      "context": {
+        "assistir": "@tiposeriefilme"
+      },
+      "conditions": "@tiposeriefilme",
+      "event_name": "input",
+      "dialog_node": "handler_10_1595805563859"
+    },
+    {
+      "type": "standard",
+      "title": "Cancao Nova",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você pode assistir a Canção Nova de acordo com sua operadora:\nSky: 24\nOi: 30\nClaro: 19"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1595974586593",
+      "conditions": "#cancaonova",
+      "dialog_node": "node_1_1595975194812",
+      "previous_sibling": "node_5_1595975416797"
+    },
+    {
+      "type": "standard",
+      "title": "Globo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você pode acessar de acordo com sua operadora:\nSky: 4\nOi: 5\nAntena: 1"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1595974586593",
+      "conditions": "#globo",
+      "dialog_node": "node_1_1595974777782",
+      "previous_sibling": "node_1_1595975194812"
+    },
+    {
+      "type": "standard",
+      "title": "Netflix",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A Netflix (https://www.netflix.com/br/) é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1595974586593",
+      "conditions": "#netflix",
+      "dialog_node": "node_10_1595974595630",
+      "previous_sibling": "node_1_1595974777782"
+    },
+    {
+      "type": "standard",
+      "title": "Ligacao wpp",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão os passos para fazer uma ligação no WhatsApp:\n1. Na tela inicial do seu celular, clique no ícone do WhatsApp\n2. No canto superior direito, clique na lupa.\n3. Digite o nome do contato que você deseja ligar.\n4. Clique no contato.\n5. Na barra verde superior, você pode clicar na câmera caso queira realizar uma ligação de vídeo ou no telefone caso queira uma ligação somente de voz. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1595974586593",
+      "conditions": "#ligacaowpp",
+      "dialog_node": "node_5_1595975416797"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1595805660521",
+      "variable": "$ouvir",
+      "dialog_node": "slot_1_1595805671220",
+      "previous_sibling": "response_3_1595976113727"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão algumas sugestões: <a href='https://music.youtube.com/search?q=@ouvir' target=\"_blank\">Ouvir @ouvir</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595805660521",
+      "conditions": "@ouvir",
+      "dialog_node": "response_3_1595976113727"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Qual estilo de música você gosta de ouvir?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1595805671220",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1595805671235",
+      "previous_sibling": "handler_10_1595805671235"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1595805671220",
+      "context": {
+        "ouvir": "@ouvir"
+      },
+      "conditions": "@ouvir",
+      "event_name": "input",
+      "dialog_node": "handler_10_1595805671235"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você pode assistir ao filme \"Velozes e Furiosos 7\", disponível na Netflix"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://occ-0-1498-185.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUZFdJp1QL0ucYiH0_0ISC-iKOCfJzSidzniSrgJBjlFxx8Rhhr8ZeT41J2jmSct5Xps3F_BUu89DeTegY0G3jfnjXo.jpg?r=958",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_6_1595805532887",
+      "conditions": "@tiposeriefilme:ação",
+      "dialog_node": "response_1_1596163891233",
+      "previous_sibling": "response_5_1596163168978"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1595805532887",
+      "variable": "$assistir",
+      "dialog_node": "slot_9_1595805563837",
+      "previous_sibling": "response_1_1596163891233"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você pode assistir ao filme \"Meu Malvado Favorito 3\", disponível na Netflix."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://occ-0-1498-185.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZsH2UQk1eeo8TVFjMIbICnAJQIQnu8vQeykiaNEza2x997rLYpZ0kJysibie1508yerxOljgqNYrY121qXmm7xIN3s.jpg?r=fd2",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_6_1595805532887",
+      "conditions": "@tiposeriefilme:animação",
+      "dialog_node": "response_5_1596163168978"
+    },
+    {
+      "type": "standard",
+      "title": "Good vibes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Fico feliz! O que você gostaria de fazer? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#goodvibes",
+      "dialog_node": "node_5_1596150679204",
+      "previous_sibling": "node_7_1596163645827"
+    },
+    {
+      "type": "frame",
+      "title": "Ouvir",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#ouvir || @ouvir",
+      "dialog_node": "node_1_1595805660521",
+      "previous_sibling": "node_5_1596150679204"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_5_1595974586593",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Filme",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#assistir || @assistir || @tiposeriefilme",
+      "dialog_node": "node_6_1595805532887",
+      "previous_sibling": "node_1_1595805660521"
+    },
+    {
+      "type": "standard",
+      "title": "Saudacao",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Como posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#saudacao",
+      "dialog_node": "node_7_1596163645827",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "folder",
+      "title": "FAQ",
+      "dialog_node": "node_5_1595974586593",
+      "previous_sibling": "node_6_1595805532887"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Eu sou a Beni, sua comadre virtual. Estou aqui para conversar e te fazer companhia neste dia lindo! Como você está? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Cumadi virtual",
+  "language": "pt-br",
+  "description": ""
+}
