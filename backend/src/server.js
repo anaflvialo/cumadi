@@ -7,7 +7,7 @@ const routes = require('./routes');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://cumadi:cumadi@cumadi.iaomk.mongodb.net/cumadidb?retryWrites=true&w=majority', {
+mongoose.connect(<YOUR_DB_URL>, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
