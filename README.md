@@ -2,7 +2,7 @@
 
 <h1>Cumadi</h1>
 
-<p>O Cumadi é um app focado em fazer companhia para idosos, no qual é possível ler boas notícias ao redor do mundo e conversar com a comadre virtual Beni. </p>
+<p>O Cumadi é um app focado em fazer companhia para idosos, no qual é possível ler boas notícias ao redor do mundo e conversar com a comadre virtual Beni. Este projeto foi desenvolvido durante o hackathon Call for Code.</p>
 
 <h3>Assistente Virtual</h3>
 <p>Para a criação da comadre virtual Beni foi utilizado o serviço <b>IBM Watson Assistant</b> (https://www.ibm.com/cloud/watson-assistant/). As habilidades foram configuradas de modo que a assistente pudesse responder perguntas do tipo "Como fazer uma ligação pelo WhatsApp?", qual o número de determinado canal de televisão e algumas sugestões de filmes e músicas. As habilidades programadas podem ser visualizadas no arquivo <b>'skill-Cumadi-virtual.json'</b> </p>
