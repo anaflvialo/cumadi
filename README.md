@@ -12,19 +12,17 @@
 
 <p>A integração da assistente com o app foi feita utilizando a ferramenta <b>Node-RED App</b>, disponível na <b>IBM Cloud</b> (https://cloud.ibm.com). Após criado o serviço, o link de integração foi inserido no arquivo 'Bot.js', disponível no caminho '/mobile/src/pages/Bot.js'.</p>
 
-<p>O arquivo 'routes.js' em '/mobile/src' contém a especificação das rotas para a navegação entre telas dentro do app.</p>
+<p>O arquivo <a href='https://github.com/anaflvialo/cumadi/blob/master/mobile/src/routes.js'>routes.js</a> contém a especificação das rotas para a navegação entre telas dentro do app.</p>
 
-<p>O arquivo 'api.js' em '/mobile/src/services' contém a integração com o backend. </p>
+<p>O arquivo <a href='https://github.com/anaflvialo/cumadi/blob/master/mobile/src/services/api.js'>api.js</a> contém a integração com o backend. </p>
 
-<p>Em 'mobile/src/assests' é possível visualizar as imagens utilizadas no projeto</p>
+<p>Em <a href='https://github.com/anaflvialo/cumadi/tree/master/mobile/src/pages'>pages</a> é possível visualizar o código de cada página criada, sendo Login a página de Login, Index a página inicial, News a página com todas as notícias, CompleteNews a página com uma notícia específica e Bot sendo a página de interação com a assistente virtual.</p>
 
-<p>Em '/mobile/pages' é possível visualizar o código de cada página criada, sendo Login a página de Login, Index a página inicial, News a página com todas as notícias, CompleteNews a página com uma notícia específica e Bot sendo a página de interação com a assistente virtual.</p>
-
-<p>O arquivo 'NewsList.js', disponível em 'mobile/src/components' contém a componentização utilizada nas notícias na página 'News'.</p>
+<p>O arquivo <a href='https://github.com/anaflvialo/cumadi/blob/master/mobile/src/components/NewsList.js'>NewsList.js</a>, contém a componentização utilizada nas notícias na página 'News'.</p>
 
 <h3>Backend</h3>
 
-<p>Em '/backend/src/', o arquivo 'server.js' contém a conexão com o banco de dados criado e o arquivo 'routes.js' contém as rotas das requisições utilizadas.</p>
+<p>O arquivo <a href='https://github.com/anaflvialo/cumadi/blob/master/backend/src/server.js'>server.js</a> contém a conexão com o banco de dados criado e o arquivo <a href='https://github.com/anaflvialo/cumadi/blob/master/backend/src/routes.js'>routes.js</a> contém as rotas das requisições utilizadas.</p>
 
-<p>O caminho 'backend/src/models' contém os arquivos com a especificação dos atributos dos modelos de usuário e notícia. Em 'backend/src/controllers' estão os arquivos para criação de usuários e notícias, os quais utilizam os <i>Schemas</i> criados em models.</p>
+<p>Em <a href='https://github.com/anaflvialo/cumadi/tree/master/backend/src/models'>models</a> estão os arquivos com a especificação dos atributos dos modelos de usuário e notícia. Em <a href='https://github.com/anaflvialo/cumadi/tree/master/backend/src/controllers'>controllers</a> estão os arquivos para criação de usuários e notícias, os quais utilizam os <i>Schemas</i> criados em models.</p>
 
